@@ -3,8 +3,20 @@ set -ex
 
 #https://www.trufflesuite.com/docs/truffle/getting-started/creating-a-project
 
-init(){
+init() {
   truffle unbox metacoin
+}
+
+compile() {
+  truffle compile
+}
+
+develop(){
+  truffle develop
+}
+
+migrate() {
+  truffle migrate -f 2
 }
 
 "$@"
